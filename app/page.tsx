@@ -24,7 +24,7 @@ export default function DashboardPage() {
   const [phoneNumber, setPhoneNumber] = useState("")
 
   const handleCall = async (form: any) => {
-    const res = await fetch(`http://13.201.132.7:5000/outbound`, {
+    const res = await fetch(`http://localhost:5000/outbound`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
